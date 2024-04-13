@@ -38,6 +38,7 @@ function sameFrequency(num1, num2) {
 function getFreqs(items) {
     const freqs = {};
     for (const item of items) {
+        // Note: Could shortern below further by incrementing in line 42
         const currCount = freqs[item] || 0;
         freqs[item] = currCount + 1;
     }
